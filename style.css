@@ -1,0 +1,88 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.card#card-sedans {
+    background-color: #E18524;
+}
+
+.card#card-suvs {
+    background-color: #006971;
+}
+
+.card#card-luxury {
+    background-color: #00403E;
+}
+
+.card {
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.card-image img {
+    border-radius: 50%;
+}
+
+
+.card-body h1 {
+    text-transform: uppercase;
+}
+
+.card-body p {
+    color: whitesmoke;
+}
+
+.card-btn button {
+    background-color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+    border: none;
+}
+
+.card-btn button#learn-more-sedans {
+    color: #cf8c00;
+}
+
+.card-btn button#learn-more-suvs {
+    color: #346773;
+}
+
+.card-btn button#learn-more-luxury {
+    color: #1c403f;
+}
+
+.card-image,
+.card-header,
+.card-body,
+.card-btn {
+    margin: 0% 10%;
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .card-btn button {
+        height: 40px;
+        width: 150px;
+    }
+}
